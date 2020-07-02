@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "362755330081",
+    "firebase_url": "https://misinfo-b3bc9.firebaseio.com",
+    "project_id": "misinfo-b3bc9",
+    "storage_bucket": "misinfo-b3bc9.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:362755330081:android:617732d3ffb7ffd2e39360",
+        "android_client_info": {
+          "package_name": "com.misinfov2"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "362755330081-sqobfudh3kaigomn3bu33eu94gl5991j.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC-3rfpWoc7BybWdF6SuuEi9d_repop3Co"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "362755330081-sqobfudh3kaigomn3bu33eu94gl5991j.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

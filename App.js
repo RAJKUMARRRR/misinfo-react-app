@@ -16,6 +16,7 @@ import {
   StatusBar,
   ImageBackground,
 } from 'react-native';
+import PushController from './PushController';
 
 import {
   Header,
@@ -30,22 +31,25 @@ import {
   AdMobBanner,
 } from 'react-native-admob';
 
+GLOBAL.XMLHttpRequest = GLOBAL.originalXMLHttpRequest || GLOBAL.XMLHttpRequest;
+
 class App extends React.Component{
   componentDidMount(){
   }
   render(){
     return (
     <Fragment >
-      <StatusBar barStyle="dark-content" />
+      <StatusBar barStyle="dark-content" backgroundColor="white" />
       <ImageBackground source={require('./bg.jpg')} style={{ width: '100%', height: '100%' }}>
-      <AdMobBanner
+       <Home/>
+       <AdMobBanner
         adSize="fullBanner"
         adUnitID="ca-app-pub-6002078647584025/8334013375"
-        //testDevices={[AdMobBanner.testDevices]}
+        testDevices={[AdMobBanner.testDevices]}
         onAdFailedToLoad={error => console.error(error)}
-       />
-       <Home/>
+      />
       </ImageBackground>
+      <PushController/>
     </Fragment>
       );
     }

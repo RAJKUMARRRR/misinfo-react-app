@@ -6,6 +6,7 @@ import { CHANNELS, APP_INFO } from '../api';
 import {
     AdMobInterstitial,
   } from 'react-native-admob';
+import axios from '../axios';
   
 class Home extends React.Component {
     state = {
@@ -36,12 +37,13 @@ class Home extends React.Component {
             });
     }
     loadData = () => {
-        fetch(CHANNELS)
-            .then((response) => response.json())
+        //fetch(CHANNELS)
+        axios.get(CHANNELS)
+            //.then((response) => response.json())
             .then((response) => {
                 //alert(JSON.stringify(response));
                 this.setState({
-                    data: response.data
+                    data: response.data.data
                 });
             })
             .catch((error) => {
